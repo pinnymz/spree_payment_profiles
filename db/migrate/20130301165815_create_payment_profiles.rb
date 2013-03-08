@@ -1,19 +1,19 @@
 class CreatePaymentProfiles < ActiveRecord::Migration
   def change
-    create_table :gateway_profiles do |t|
+    create_table :spree_gateway_profiles do |t|
       t.integer :user_id, :null => false
       t.string :gateway, :null => false
       t.string :profile_id, :null => false
-      t.boolean :expired
+      t.datetime :expired_at
       t.timestamps
     end
 
-    create_table :payment_profiles do |t|
+    create_table :spree_payment_profiles do |t|
       t.references :gateway_profile, :null => false
       t.string :profile_id, :null => false
       t.string :description, :null => false
       t.boolean :default
-      t.boolean :expired
+      t.datetime :expired_at
       t.timestamps
     end
   end

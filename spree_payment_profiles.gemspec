@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.author    = 'Pinny Markowitz'
   s.email     = 'pinny@mwitz.com'
-  s.homepage  = 'http://github.com/pinymz/spree_payment_profiles'
+  s.homepage  = 'http://github.com/pinnymz/spree_payment_profiles'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
